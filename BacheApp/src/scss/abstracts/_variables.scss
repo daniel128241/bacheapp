@@ -1,0 +1,46 @@
+// 1. Variables de CSS Nativo (Para usar en toda la app y acceder desde JS si es necesario)
+:root {
+    --bg: #F5F7FA;
+    --primary: #1E3A5F;
+    --secondary: #3A86FF;
+    --accent: #FFD60A;
+    --danger: #E63946;
+    --success: #2EC4B6;
+    --text: #1C1C1C;
+    --card: #FFFFFF;
+    --border: #E2E8F0;
+    --muted: #8898AA;
+
+    // Sombras
+    --shadow-sm: 0 2px 8px rgba(30, 58, 95, .08);
+    --shadow-md: 0 8px 32px rgba(30, 58, 95, .13);
+    --shadow-lg: 0 20px 60px rgba(30, 58, 95, .2);
+
+    // Geometría
+    --radius: 14px;
+    --hh: 68px; // Altura del Header (Header Height)
+
+    // Fuentes
+    --font-d: 'Syne', sans-serif;
+    --font-b: 'DM Sans', sans-serif;
+}
+
+// 2. Mapeo a Variables de SCSS (Para usar con @use en tus otros archivos .scss)
+// Esto te permite escribir 'color: $primary' y que compile más rápido.
+
+$bg: var(--bg);
+$primary: var(--primary);
+$secondary: var(--secondary);
+$accent: var(--accent);
+$danger: var(--danger);
+$success: var(--success);
+$text: var(--text);
+$card: var(--card);
+$border: var(--border);
+$muted: var(--muted);
+
+$font-main: var(--font-b);
+$font-display: var(--font-d);
+
+$shadow-md: var(--shadow-md);
+$radius: var(--radius);

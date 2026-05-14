@@ -1,0 +1,146 @@
+/* ════════════════════════════════════════
+       CARDS
+    ════════════════════════════════════════ */
+.report-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1.5px solid transparent;
+    transition: transform .22s, box-shadow .22s, border-color .22s;
+    cursor: pointer;
+    position: relative;
+    animation: cardIn .35s ease both
+}
+
+.report-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary)
+}
+
+.report-card:nth-child(1) {
+    animation-delay: .05s
+}
+
+.report-card:nth-child(2) {
+    animation-delay: .10s
+}
+
+.report-card:nth-child(3) {
+    animation-delay: .15s
+}
+
+.report-card:nth-child(4) {
+    animation-delay: .20s
+}
+
+.report-card:nth-child(5) {
+    animation-delay: .25s
+}
+
+.report-card:nth-child(6) {
+    animation-delay: .30s
+}
+
+.card-bar {
+    height: 4px
+}
+
+.card-bar.danger {
+    background: var(--danger)
+}
+
+.card-bar.medium {
+    background: var(--accent)
+}
+
+.card-bar.repaired {
+    background: var(--success)
+}
+
+.card-img-wrap {
+    position: relative;
+    height: 148px;
+    overflow: hidden
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s
+}
+
+.report-card:hover .card-img-wrap img {
+    transform: scale(1.04)
+}
+
+.card-body {
+    padding: 11px 14px 9px
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px 10px;
+    border-top: 1px solid var(--border)
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: .74rem;
+    color: var(--muted)
+}
+
+.card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 3px
+}
+
+.card-actions {
+    display: flex;
+    gap: 5px
+}
+
+
+/* ════════════════════════════════════════
+       FEED
+    ════════════════════════════════════════ */
+
+
+.feed-header {
+    position: sticky;
+    top: 0;
+    background: var(--card);
+    padding: 13px 17px 9px;
+    border-bottom: 1px solid var(--border);
+    z-index: 5
+}
+
+.feed-count {
+    font-size: .74rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--bg);
+    padding: 3px 9px;
+    border-radius: 99px
+}
+
+.feed-sort {
+    margin-top: 7px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap
+}
+
+.feed-list {
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px
+}

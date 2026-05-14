@@ -1,0 +1,64 @@
+.abs-top-right {
+    position: absolute;
+    top: 9px;
+    right: 9px
+}
+
+.priority-flag {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    background: var(--accent);
+    color: var(--primary);
+    font-size: .64rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: .69rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    backdrop-filter: blur(8px)
+}
+
+.status-badge.danger {
+    background: rgba(230, 57, 70, .9);
+    color: #fff
+}
+
+.status-badge.medium {
+    background: rgba(255, 214, 10, .95);
+    color: #333
+}
+
+.status-badge.repaired {
+    background: rgba(46, 196, 182, .9);
+    color: #fff
+}
+
+
+/* ════════════════════════════════════════
+       EMPTY STATE
+    ════════════════════════════════════════ */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 48px 20px;
+    text-align: center
+}
+
+.empty-state svg {
+    color: var(--border)
+}
+
+.empty-state p {
+    font-size: .86rem;
+    color: var(--muted)
+}

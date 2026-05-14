@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as v;
+
+body {
+    // 1. Aplicamos las variables de fondo y fuente
+    background-color: var(--bg); // O usar v.$color-fondo-principal;
+    font-family: var(--font-b);
+    color: var(--text);
+    
+    // 2. Control de scroll para la app
+    overflow-x: hidden; 
+    line-height: 1.6;
+}
+
+// 3. Estilos de selección (el color que sale al subrayar texto)
+::selection {
+    background-color: var(--secondary);
+    color: white;
+}
+
+// 4. Scrollbar personalizada (para que el feed de baches se vea pro)
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--muted);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+// 5. Clases de utilidad muy comunes
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}

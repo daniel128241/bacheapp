@@ -1,0 +1,72 @@
+/* ════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════ */
+@media(max-width:900px) {
+    .app-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: 44vh 1fr;
+        height: auto;
+        overflow: visible
+    }
+
+    .map-panel {
+        height: 44vh
+    }
+
+    .feed-panel {
+        height: auto;
+        overflow-y: visible;
+        min-height: 50vh
+    }
+
+    .header-filters {
+        display: none
+    }
+
+    .search-bar {
+        max-width: 200px
+    }
+
+    .form-row {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:600px) {
+    .header {
+        padding: 0 12px;
+        gap: 8px
+    }
+
+    .logo-text {
+        display: none
+    }
+
+    .search-bar {
+        display: none
+    }
+
+    .btn-report-hdr span {
+        display: none
+    }
+
+    .btn-report-hdr {
+        padding: 0 10px
+    }
+
+    .role-badge-hdr span {
+        display: none
+    }
+
+    .detail-stats {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .share-platforms {
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .map-legend {
+        display: none
+    }
+}

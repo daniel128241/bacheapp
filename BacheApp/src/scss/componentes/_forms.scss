@@ -1,0 +1,155 @@
+/* ════════════════════════════════════════
+       MODAL REPORTE
+    ════════════════════════════════════════ */
+.form-body {
+    padding: 17px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.form-group label {
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .3px
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 9px 12px;
+    font-size: .87rem;
+    color: var(--text);
+    outline: none;
+    transition: border-color .2s, box-shadow .2s
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(58, 134, 255, .1)
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 82px
+}
+
+.upload-zone {
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    padding: 21px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s
+}
+
+.upload-zone:hover {
+    border-color: var(--secondary);
+    background: rgba(58, 134, 255, .04)
+}
+
+.upload-zone svg {
+    margin: 0 auto 8px;
+    color: var(--muted)
+}
+
+.upload-zone p {
+    font-size: .82rem;
+    color: var(--muted)
+}
+
+.upload-zone span {
+    color: var(--secondary);
+    font-weight: 600
+}
+
+.coords-hint {
+    font-size: .71rem;
+    color: var(--secondary);
+    padding: 5px 10px;
+    background: rgba(58, 134, 255, .07);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.danger-selector {
+    display: flex;
+    gap: 7px
+}
+
+.danger-option {
+    flex: 1;
+    padding: 9px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+    font-size: .79rem;
+    font-weight: 600
+}
+
+.danger-option.high {
+    color: var(--danger)
+}
+
+.danger-option.medium {
+    color: #9a7f00
+}
+
+.danger-option.low {
+    color: var(--success)
+}
+
+.danger-option.selected {
+    background: currentColor
+}
+
+.danger-option.selected span {
+    filter: invert(1) brightness(10)
+}
+
+.comment-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 13px;
+    align-items: flex-end
+}
+
+.comment-form textarea {
+    flex: 1;
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 9px 12px;
+    font-size: .82rem;
+    color: var(--text);
+    resize: none;
+    height: 65px;
+    outline: none;
+    transition: border-color .2s
+}
+
+.comment-form textarea:focus {
+    border-color: var(--secondary)
+}
